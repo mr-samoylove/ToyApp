@@ -20,4 +20,8 @@ public class Toy {
     public int getChanceValue() {
         return chanceValue;
     }
+
+    public String toString() {
+        return String.join(",", String.valueOf(this.id), this.name, String.valueOf(this.chanceValue));
+    }
 }
